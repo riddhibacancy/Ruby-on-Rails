@@ -1,0 +1,8 @@
+1.which should we prefer strings and symbols ? and why ?
+
+-Syntactically, strings are any text written between quotation marks (“this is a string”, ‘so is this’, `this too!`), while a symbol is text that begins with a colon (:symbol). Ruby symbols are defined as “scalar value objects used as identifiers, mapping immutable strings to fixed internal values.” Essentially what this means is that symbols are immutable strings.
+In programming, an immutable object is something that cannot be changed. When you create an immutable object, it will remain the same until it is destroyed.
+
+-"If the textual content of the object is important, use a String. If the identity of the object is important, use a Symbol.” ~Jim Weirich
+-The immutable nature of symbols makes them very valuable in programming because mutable objects can cause bugs that are difficult to detect. Since symbols stay the same, using them helps to avoid this issue.
+
